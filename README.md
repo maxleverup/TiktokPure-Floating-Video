@@ -2,9 +2,11 @@
   <img src="https://img.shields.io/badge/Firefox%20Add--ons-Get%20Extension-FF6611?style=for-the-badge&logo=firefox&logoColor=white" alt="Firefox Add-ons"/>
 </a>
 &nbsp;&nbsp;
-<div align="center"><a href="https://github.com/maxleverup/TiktokPure-Floating-Video/releases/tag/Download">
-  <img src="https://img.shields.io/badge/Firefox%20Add--ons-Get%20Extension-FF6611?style=for-the-badge&logo=firefox&logoColor=white" alt="Firefox Add-ons"/>
-</a>
+<div align="center">
+  <a href="https://github.com/maxleverup/TiktokPure-Floating-Video/releases/tag/Download">
+    <img src="https://img.shields.io/badge/Chrome%20Web%20Store-Get%20Extension-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome Web Store"/>
+  </a>
+</div>
 </div>
 <br/>
 # TiktokPure-Floating-Video
