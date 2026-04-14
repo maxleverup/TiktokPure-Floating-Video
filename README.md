@@ -1,3 +1,12 @@
+<div align="center"><a href="https://addons.mozilla.org/en-US/firefox/addon/tiktokpure-floating-video/">
+  <img src="https://img.shields.io/badge/Firefox%20Add--ons-Get%20Extension-FF6611?style=for-the-badge&logo=firefox&logoColor=white" alt="Firefox Add-ons"/>
+</a>
+&nbsp;&nbsp;
+<a href="https://github.com/yourname/yourrepo/releases">
+  <img src="https://img.shields.io/badge/Releases-Download%20for%20Chrome-4A90E2?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Releases"/>
+</a>
+</div>
+<br/>
 # TiktokPure-Floating-Video
 TiktokPure Floating Video is a Firefox extension that lets users watch TikTok through a floating panel overlaid on any website currently open in the browser — without switching tabs.
 <div align="center">
@@ -16,7 +25,7 @@ TiktokPure Floating Video is a Firefox extension that lets users watch TikTok th
 <br/>
 <br/>
 
-[📦 Install](#installation) · [✨ Features](#features) · [🖼️ Screenshots](#screenshots) · [⚙️ Settings](#settings) 
+[📦 Install Instrucsion](#installation) · [✨ Features](#features) · [🖼️ Screenshots](#screenshots) · [⚙️ Settings](#settings) 
 
 </div>
 
