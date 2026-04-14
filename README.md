@@ -2,8 +2,8 @@
   <img src="https://img.shields.io/badge/Firefox%20Add--ons-Get%20Extension-FF6611?style=for-the-badge&logo=firefox&logoColor=white" alt="Firefox Add-ons"/>
 </a>
 &nbsp;&nbsp;
-<a href="https://github.com/yourname/yourrepo/releases">
-  <img src="https://img.shields.io/badge/Releases-Download%20for%20Chrome-4A90E2?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Releases"/>
+<div align="center"><a href="https://github.com/maxleverup/TiktokPure-Floating-Video/releases/tag/Download">
+  <img src="https://img.shields.io/badge/Firefox%20Add--ons-Get%20Extension-FF6611?style=for-the-badge&logo=firefox&logoColor=white" alt="Firefox Add-ons"/>
 </a>
 </div>
 <br/>
