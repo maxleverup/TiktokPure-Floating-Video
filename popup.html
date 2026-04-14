@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TiktokPure Floating Video</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<div id="root">
+
+  <!-- ── HEADER ──────────────────────────────────────────────────────── -->
+  <div class="hdr">
+    <div class="logo">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="none">
+  <!-- Thân điện thoại -->
+  <rect x="4" y="1" width="16" height="22" rx="3"
+    fill="#5d8a61" stroke="#4a7050" stroke-width="0.8"/>
+  
+  <!-- Màn hình -->
+  <rect x="6" y="3.5" width="12" height="16" rx="1.5"
+    fill="#f5f0e8"/>
+  
+  <!-- Nút home -->
+  <circle cx="12" cy="21" r="0.8" fill="#f5f0e8" opacity="0.6"/>
+  
+  <!-- Chữ T đơn giản thay icon TikTok -->
+  <text x="12" y="14" 
+    font-size="8" 
+    font-weight="bold"
+    fill="#5d8a61" 
+    text-anchor="middle"
+    font-family="Arial, sans-serif">♪</text>
+</svg>
+      <div>
+        <h1>TiktokPure Floating Video</h1>
+        <p>Pure tiktok video · Float anywhere</p>
+      </div>
+    </div>
+    <div style="display:flex; align-items:center; gap:8px;">
+      <div class="status" id="status-dot">
+        <span class="dot"></span>
+        <span id="stext">Off</span>
+      </div>
+      <button class="theme-btn" id="theme-toggle" title="Toggle theme">
+        <svg class="moon-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="sun-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- ── MOBILE VIEW ──────────────────────────────────────────────── -->
+    <div class="group">
+      <p class="gtitle">📱 Floating Panel Setting &nbsp;<span style="font-size:10px; font-weight:400; color:var(--mt); font-style:italic;">some need refresh page to apply</span></p>
+
+      <div class="row">
+        <div class="ri">
+          <span class="rn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle; margin-right:4px;"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            Mobile View
+            <span id="btn-mv-help" style="cursor:help;background:var(--mt);color:#fff;width:13px;height:13px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;font-size:8px;font-weight:bold;margin-left:4px;">?</span>
+          </span>
+          <span class="rd">Float TikTok on any tab · <kbd class="kbd">F8</kbd> toggle</span>
+        </div>
+        <label class="sw"><input type="checkbox" id="c-mobileview"><span class="st"><span class="sk"></span></span></label>
+      </div>
+
+      <!-- Feature rows -->
+      <div class="row">
+        <div class="ri">
+          <span class="rn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle; margin-right:4px;"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+            Run in Background
+          </span>
+          <span class="rd">Video audio continues playing when you switch tabs</span>
+        </div>
+        <label class="sw"><input type="checkbox" id="c-bgplay"><span class="st"><span class="sk"></span></span></label>
+      </div>
+
+      <div class="row">
+        <div class="ri">
+          <span class="rn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle; margin-right:4px;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+            Auto Mute
+          </span>
+          <span class="rd">Mutes the panel when it is hidden, unmutes when shown</span>
+        </div>
+        <label class="sw"><input type="checkbox" id="c-automute"><span class="st"><span class="sk"></span></span></label>
+      </div>
+
+      <div class="row">
+        <div class="ri">
+          <span class="rn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle; margin-right:4px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Stealth Mode
+          </span>
+          <span class="rd">Hides the toggle button — use <kbd class="kbd">F8</kbd> to show/hide the panel</span>
+        </div>
+        <label class="sw"><input type="checkbox" id="c-stealth"><span class="st"><span class="sk"></span></span></label>
+      </div>
+
+      <div class="row">
+        <div class="ri">
+          <span class="rn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle; margin-right:4px;"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            Clean Mode
+          </span>
+          <span class="rd">Hide username, captions and video progress</span>
+        </div>
+        <label class="sw"><input type="checkbox" id="c-cleanmode"><span class="st"><span class="sk"></span></span></label>
+      </div>
+
+      <!-- Help box -->
+      <div id="mv-help-box" style="display:none; margin:0 13px 12px; padding:10px; background:rgba(254,44,85,0.05); border:1px solid rgba(254,44,85,0.2); border-radius:8px; font-size:11px; flex-direction:column; gap:6px;">
+        <strong style="color:#fe2c55;">📱 Mobile View — How to use</strong>
+        <div style="color:var(--tx); line-height:1.6; margin-top:2px;">
+          Float TikTok in mobile view on any tab.<br>
+          Enable the feature then open any tab — the TikTok panel will appear on the right side of your screen.
+        </div>
+        <div style="color:var(--tx); margin-top:2px;">
+          <b>Action Bar (bottom of panel):</b>
+          <ul style="margin:4px 0 0 14px; padding:0; color:var(--tx); line-height:1.8;">
+            <li><b>🔇 Mute / Unmute</b> — Toggle sound for the TikTok panel</li>
+            <li><b>🔒 Lock / Locked</b> — Lock the aspect ratio when resizing</li>
+            <li><b>✕ Close</b> — Hide the panel (TikTok keeps running in background)</li>
+          </ul>
+        </div>
+        <div style="margin-top:4px; padding:6px 8px; background:rgba(254,44,85,0.08); border-radius:6px; color:var(--tx);">
+          <b>⌨️ Shortcut:</b> Press <kbd style="background:var(--bg2,#eee);padding:1px 5px;border-radius:4px;font-size:10px;font-family:monospace;">F8</kbd> to quickly show/hide the panel on any tab.<br>
+          <span style="font-size:10px;color:var(--mt);">Note: F8 only works when Mobile View is enabled in settings.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── AUTHOR ────────────────────────────────────────────────────── -->
+    <div class="group" style="padding-bottom:12px;">
+      <p class="gtitle">🙋‍♂️ Author & Support</p>
+      <div style="display:flex; flex-direction:column; align-items:center; text-align:center; padding:0 8px; gap:10px;">
+        <div style="font-weight:600; font-size:12.5px; color:var(--tx);">Developed with ❤️ by Nguyen Quoc An</div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap; justify-content:center;">
+          <a href="mailto:anvsme123@gmail.com" style="display:flex; align-items:center; gap:6px; padding:6px 14px; background:var(--btn-bg); border:1px solid var(--bd); border-radius:8px; color:var(--tx); text-decoration:none; font-size:11px; font-weight:600; transition:background .2s;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            anvsme123@gmail.com
+          </a>
+          <a href="https://drive.google.com/file/d/1CI-58cJAg9zX0gXfzlt8AIhq8qX_c80o/view" target="_blank" style="display: flex; align-items: center; gap: 6px; padding: 6px 14px; background: linear-gradient(135deg, #7a9e7e, #5d8a61); border: 1px solid #5d8a61; border-radius: 8px; color: #faf7f2; text-decoration: none; font-size: 11px; font-weight: 600; transition: opacity 0.2s, transform 0.15s; box-shadow: 0 2px 8px rgba(122,158,126,0.3);" onmouseover="this.style.opacity='0.88'; this.style.transform='scale(1.03)'" onmouseout="this.style.opacity='1'; this.style.transform='scale(1)'">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#faf7f2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            Donate through QR
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /content -->
+
+  <div class="toast" id="toast"></div>
+</div>
+<script src="popup.js"></script>
+</body>
+</html>
